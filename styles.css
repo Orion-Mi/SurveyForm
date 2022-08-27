@@ -1,0 +1,79 @@
+body {
+    background-color: honeydew;
+    width: 80%;
+    max-width: 800px; /*to be modified later*/
+    margin: auto;
+}
+header, main {
+    background-color:skyblue;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    margin-top: 40px;
+}
+#title {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+}
+#description {
+    font-size: 20px;
+    font-weight: bold;
+}
+#description a {
+    text-decoration: none;
+}
+p a:hover {
+    color: aliceblue;
+}
+form {
+    /*background-color: aquamarine; /*to be removed later*/
+    padding-bottom: 15px; /*to be removed later*/
+    width: 75vw;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+input, textarea, select {
+    min-height: 1.5em;
+    width: 90%;
+    margin: 10px 0 0 0;
+}
+input, textarea, select, radio {
+    background-color: rgb(160, 245, 245);
+    border: 1px solid aliceblue;
+}
+label {
+    display: block;
+    margin: 1rem 0;
+}
+#submit {
+    display: block;
+    width: 60%;
+    margin: 5px auto;
+    background-color: darkolivegreen;
+    color: bisque;
+    min-width: 250px;
+    border: 1px solid aliceblue;
+    min-height: 2em;
+}
+#submit:hover {
+    background-color: aliceblue;
+    color: darkolivegreen;
+    
+}
+#submit:active {
+    transform: none;
+}
+.horizontal {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+.input-checkbox {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}

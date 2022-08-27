@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Colibri Institute Internal Survey.</h1>
+      <p id="description">The responses to this survey will assist us in determining the demography of our learners.</p>
+      <p id="description"><strong>PS:</strong> The data provided will be processed under the <a href="#">Students Protection Act, 2038</a>. No part of the information shall be shared with the third-party</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label">Name: 
+          <input 
+          id="name" 
+          type="text" 
+          required 
+          placeholder="first name & last name"
+          />
+        </label>
+        <label id="email-label">Email: 
+          <input 
+          id="email" 
+          type="email" 
+          required 
+          placeholder="abcde@xyz.domain"
+          />
+        </label>
+        <!--student Number-->
+        <label id="number-label">Student Id: 
+          <input 
+          id="number" 
+          type="number" 
+          pattern="[0-5]{0,9}" 
+          placeholder="(4-6) digits"
+          min="    "
+          max="      "
+          />
+          <!--dropdown option-->
+        </label>
+        <label>What is your field of study?
+          <select id="dropdown">
+            <option value="">select your field</option>
+            <option value="1">Art</option>
+            <option value="2">Journalism and Mass Communication</option>
+            <option value="3">Music</option>
+            <option value="4">Language</option>
+            <option value="5">Photography</option>
+            <option value="6">Business Administration</option>
+            <option value="7">Programming and Web Development</option>
+            <option value="8">Statistics</option>
+          </select>
+        </label>
+        <!--Radio button (at least 2)-->
+        <div id="radio-type">
+        <p>What is your highest level of education?</p>
+          <label>
+            <input 
+            name="level-highest"
+            value="o'level"
+            type="radio"
+            class="horizontal"
+            />
+            O'level
+          </label>
+          <label>
+            <input 
+            name="level-highest"
+            value="a'level"
+            type="radio"
+            class="horizontal"
+            />
+            A'level
+          </label>
+          <label>
+            <input 
+            name="level-highest"
+            value="undergraduate"
+            type="radio"
+            class="horizontal"
+            />
+            Undergraduate
+          </label>
+          <label>
+            <input 
+            name="level-highest"
+            value="graduate"
+            type="radio"
+            class="horizontal"
+            />
+            Graduate
+          </label>
+        </div>
+        <!--checkboxes-->
+        <div class="checkbox">
+        <p>How do you get information from Colibri Institute? (Check all that apply)</p>
+          <label>
+            <input
+              value="notice-board"
+              type="checkbox"
+              class="input-checkbox"
+            />School Noticeboard</label>
+            <label>
+            <input
+              value="school-website"
+              type="checkbox"
+              class="input-checkbox"
+            />School Website</label>
+            <label>
+            <label>
+            <input
+              value="newsletters"
+              type="checkbox"
+              class="input-checkbox"
+            />Email Newsletters</label>
+            <input
+              value="facebook-page"
+              type="checkbox"
+              class="input-checkbox"
+            />Facebook</label>
+            <label>
+            <input
+              value="instagram"
+              type="checkbox"
+              class="input-checkbox"
+            />Instagram</label>
+        </div>
+        <!--Textarea-->
+        <label>Tell us more about yourself.
+          <textarea name="personality" rows="4" cols="30"></textarea>
+        </label>
+        <!--Submit button-->
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
